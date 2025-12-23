@@ -1,6 +1,7 @@
 import streamlit as st
 import pandas as pd
 import matplotlib.pyplot as plt
+
 ## Use this for Streamlit in Snowflake deployment
 # from snowflake.snowpark.context import get_active_session
 # from snowflake.cortex import complete
@@ -76,3 +77,4 @@ if user_question:
     response = session.sql(f"SELECT SNOWFLAKE.CORTEX.COMPLETE('claude-3-5-sonnet', $${prompt}$$)").collect()[0][0]
     
     st.write(response)
+
