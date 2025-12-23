@@ -14,7 +14,7 @@ This module focuses on the fundamentals of Streamlit and local data handling.
 
 ### 📁 [03-GenAi-data-assistant](./GenAi-data-assistant)
 The final stage of the application, transforming the prototype into a cloud-native AI assistant.
-* **Key Features:** * **Snowflake Integration:** Direct connection to cloud data warehouses.
+* **Key Features:** **Snowflake Integration:** Direct connection to cloud data warehouses.
     * **Cortex AI:** Leveraging the `claude-3-5-sonnet` model directly within Snowflake for high-performance inference.
     * **Natural Language Querying:** A chatbot interface that allows users to ask questions about their data in plain English.
 * **Tech Stack:** Streamlit, Snowflake (Snowpark & Cortex), Matplotlib, Claude 3.5 Sonnet.
@@ -36,7 +36,7 @@ The final stage of the application, transforming the prototype into a cloud-nati
     ```
 
 3.  **Snowflake Configuration:**
-    For the Data Assistant (Module 3), ensure your `.streamlit/secrets.toml` is configured with your Snowflake credentials (do not commit this file to GitHub!).
+    For the Data Assistant, ensure your `.streamlit/secrets.toml` is configured with your Snowflake credentials (do not commit this file to GitHub!).
 
 ---
 *Disclaimer: This project was built as part of the DeepLearning.AI course curriculum.*
