@@ -6,13 +6,13 @@ This repository contains the projects developed during the **DeepLearning.AI** c
 
 The project is divided into two main stages of development, showcasing how to build, scale, and integrate LLMs into data applications.
 
-### 📁 [01-GenAi-data-ingestion-and-cleaning](./GenAi-data-ingestion-and-cleaning)
+### 📁 [GenAi-data-ingestion-and-cleaning](./GenAi-data-ingestion-and-cleaning)
 This module focuses on the fundamentals of Streamlit and local data handling.
 * **Key Features:** CSV data ingestion, automated text cleaning using Regex, and interactive data visualization (Bar Charts).
 * **Tech Stack:** Streamlit, Pandas, Python (Regex).
 * **Learning Goal:** Understanding state management (`st.session_state`) and building a responsive UI layout.
 
-### 📁 [03-GenAi-data-assistant](./GenAi-data-assistant)
+### 📁 [GenAi-data-assistant](./GenAi-data-assistant)
 The final stage of the application, transforming the prototype into a cloud-native AI assistant.
 * **Key Features:** **Snowflake Integration:** Direct connection to cloud data warehouses.
     * **Cortex AI:** Leveraging the `claude-3-5-sonnet` model directly within Snowflake for high-performance inference.
