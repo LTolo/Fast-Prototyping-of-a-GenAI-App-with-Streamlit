@@ -20,7 +20,7 @@ The final stage of the application, transforming the prototype into a cloud-nati
 * **Tech Stack:** Streamlit, Snowflake (Snowpark & Cortex), Matplotlib, Claude 3.5 Sonnet.
 * **Learning Goal:** Implementing RAG (Retrieval-Augmented Generation) patterns and deploying enterprise-grade GenAI apps.
 
-### 📁 [GanAi-Advanced-RAG-and-Chatbot](./04-Advanced-RAG-and-Chatbot)
+### 📁 [GanAi-Advanced-RAG-and-Chatbot](./GenAi-Advanced-RAG-and-Chatbot)
 The advanced stage focusing on enterprise-grade features and RAG architecture.
 * **Key Features:** **Cortex Search:** Implementation of a RAG pipeline with semantic search.
     * **Advanced UI:** Multi-tab interface for data exploration and AI interaction.
