@@ -6,13 +6,13 @@ This repository contains the projects developed during the **DeepLearning.AI** c
 
 The project is divided into two main stages of development, showcasing how to build, scale, and integrate LLMs into data applications.
 
-### 📁 [GenAi-Data-Ingestion-and-Cleaning](./GenAi-Data-Ingestion-and-Cleaning)
+### 📁 [01-GenAi-Data-Ingestion-and-Cleaning](./01-GenAi-Data-Ingestion-and-Cleaning)
 This module focuses on the fundamentals of Streamlit and local data handling.
 * **Key Features:** CSV data ingestion, automated text cleaning using Regex, and interactive data visualization (Bar Charts).
 * **Tech Stack:** Streamlit, Pandas, Python (Regex).
 * **Learning Goal:** Understanding state management (`st.session_state`) and building a responsive UI layout.
 
-### 📁 [GenAi-Data-Assistant](./GenAi-Data-Assistant)
+### 📁 [02-GenAi-Data-Assistant](./02-GenAi-Data-Assistant)
 The final stage of the application, transforming the prototype into a cloud-native AI assistant.
 * **Key Features:** **Snowflake Integration:** Direct connection to cloud data warehouses.
     * **Cortex AI:** Leveraging the `claude-3-5-sonnet` model directly within Snowflake for high-performance inference.
@@ -20,7 +20,7 @@ The final stage of the application, transforming the prototype into a cloud-nati
 * **Tech Stack:** Streamlit, Snowflake (Snowpark & Cortex), Matplotlib, Claude 3.5 Sonnet.
 * **Learning Goal:** Implementing RAG (Retrieval-Augmented Generation) patterns and deploying enterprise-grade GenAI apps.
 
-### 📁 [GenAi-Advanced-RAG-and-Chatbot](./GenAi-Advanced-RAG-and-Chatbot)
+### 📁 [03-GenAi-Advanced-RAG-and-Chatbot](./03-GenAi-Advanced-RAG-and-Chatbot)
 The advanced stage focusing on enterprise-grade features and RAG architecture.
 * **Key Features:** **Cortex Search:** Implementation of a RAG pipeline with semantic search.
     * **Advanced UI:** Multi-tab interface for data exploration and AI interaction.
