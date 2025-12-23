@@ -14,7 +14,8 @@ This module focuses on the fundamentals of Streamlit and local data handling.
 
 ### 📁 [02-GenAi-Data-Assistant](./02-GenAi-Data-Assistant)
 The final stage of the application, transforming the prototype into a cloud-native AI assistant.
-* **Key Features:** **Snowflake Integration:** Direct connection to cloud data warehouses.
+* **Key Features:**
+    * **Snowflake Integration:** Direct connection to cloud data warehouses.
     * **Cortex AI:** Leveraging the `claude-3-5-sonnet` model directly within Snowflake for high-performance inference.
     * **Natural Language Querying:** A chatbot interface that allows users to ask questions about their data in plain English.
 * **Tech Stack:** Streamlit, Snowflake (Snowpark & Cortex), Matplotlib, Claude 3.5 Sonnet.
@@ -22,7 +23,8 @@ The final stage of the application, transforming the prototype into a cloud-nati
 
 ### 📁 [03-GenAi-Advanced-Rag-and-Chatbot](./03-GenAi-Advanced-Rag-and-Chatbot)
 The advanced stage focusing on enterprise-grade features and RAG architecture.
-* **Key Features:** **Cortex Search:** Implementation of a RAG pipeline with semantic search.
+* **Key Features:**
+    * **Cortex Search:** Implementation of a RAG pipeline with semantic search.
     * **Advanced UI:** Multi-tab interface for data exploration and AI interaction.
     * **Chat History:** Persistent conversation memory using `st.session_state`.
     * **Model Selection:** Support for multiple LLMs (Claude 3.5, Mistral, Llama 3).
