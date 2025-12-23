@@ -26,7 +26,7 @@ The final stage of the application, transforming the prototype into a cloud-nati
 
 1.  **Clone the repository:**
     ```bash
-    git clone [https://github.com/DEIN-USER-NAME/Fast-Prototyping-of-a-GenAI-App-with-Streamlit.git](https://github.com/DEIN-USER-NAME/Fast-Prototyping-of-a-GenAI-App-with-Streamlit.git)
+    git clone [https://github.com/LTolo/Fast-Prototyping-of-a-GenAI-App-with-Streamlit.git](https://github.com/LTolo/Fast-Prototyping-of-a-GenAI-App-with-Streamlit.git)
     ```
 
 2.  **Install Dependencies:**
