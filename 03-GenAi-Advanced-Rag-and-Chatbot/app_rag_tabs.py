@@ -3,6 +3,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import json
 from snowflake.core import Root
+
 ## Use this for Streamlit in Snowflake deployment
 # from snowflake.snowpark.context import get_active_session
 
@@ -101,3 +102,4 @@ with tab2:
                 st.write(f"**{row['CHUNK']}**")
                 st.caption(row['file_name'])
                 st.write('---')
+
