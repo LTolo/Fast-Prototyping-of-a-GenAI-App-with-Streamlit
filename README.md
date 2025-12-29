@@ -1,6 +1,6 @@
 # Fast Prototyping of a GenAI App with Streamlit
 
-This repository contains the projects developed during the **DeepLearning.AI** course: *"Fast Prototyping of GenAI Apps with Streamlit"*. The goal of this project is to demonstrate the evolution from a basic data processing tool to a fully integrated AI-powered data assistant.
+This repository contains the projects developed during the **DeepLearning.AI** course: *"Fast Prototyping of GenAI Apps with Streamlit"*. The goal of this project is to demonstrate the evolution from a basic data processing tool to a fully integrated AI-powered data assistant (using the Avalanche dataset).
 
 ## 🚀 Project Overview
 
