@@ -6,10 +6,11 @@ This data set is comprised of:
 - Customer reviews
 - Shipping log
 
-## What you're building
+## What was builded
 
-You're tasked with the goal of figuring out the general sentiment that customers have towards the company's products. Therefore, you'll use the ***customer reviews*** data to build a dashboard app with Streamlit.
+The task had the goal of figuring out the general sentiment that customers have towards the company's products. Therefore, the ***customer reviews*** data was used to build a dashboard app with Streamlit.
 
 ## Unstructured data
+
 
 The unstructured version of the data is provided in the `.zip` file (that contains a collection of `DOCX` files).
