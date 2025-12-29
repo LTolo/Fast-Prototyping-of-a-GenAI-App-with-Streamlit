@@ -29,6 +29,8 @@ The advanced stage focusing on enterprise-grade features and RAG architecture.
     * **Chat History:** Persistent conversation memory using `st.session_state`.
     * **Model Selection:** Support for multiple LLMs (Claude 3.5, Mistral, Llama 3).
 * **Tech Stack:** Snowflake Cortex Search, Streamlit Tabs & Chat Elements.
+##App Interace
+![Streamlit Snowflake Dashboard](03-GenAi-Advanced-Rag-and-Chatbot/assets/deploy-to-streamlit-in-snowflake-2.png)
 ---
 
 ## 🛠️ Setup & Installation
