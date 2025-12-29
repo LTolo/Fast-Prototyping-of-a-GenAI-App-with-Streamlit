@@ -30,7 +30,7 @@ The advanced stage focusing on enterprise-grade features and RAG architecture.
     * **Model Selection:** Support for multiple LLMs (Claude 3.5, Mistral, Llama 3).
 * **Tech Stack:** Snowflake Cortex Search, Streamlit Tabs & Chat Elements.
 
-## App Interace from Folder 03
+#### App Interace from Folder 03
 ![Streamlit Snowflake Dashboard](03-GenAi-Advanced-Rag-and-Chatbot/assets/deploy-to-streamlit-in-snowflake-2.png)
 ---
 
