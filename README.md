@@ -58,25 +58,6 @@ The deployed Streamlit-in-Snowflake app, running the Cortex Search RAG pipeline:
   <img src="03-GenAi-Advanced-Rag-and-Chatbot/assets/deploy-to-streamlit-in-snowflake-2.png" width="820" alt="Streamlit-in-Snowflake dashboard">
 </p>
 
-## How it works
-
-```mermaid
-graph LR;
-    CSV["Avalanche data<br/>(reviews + shipping)"] --> ING[01 · Ingest & clean]
-    ING --> SNOW[(Snowflake)]
-    SNOW --> ASST[02 · Cortex chatbot]
-    SNOW --> CHUNK[Chunk + embed]
-    CHUNK --> SEARCH[Cortex Search]
-    SEARCH --> RAG[03 · RAG chatbot]
-    style SEARCH fill:#29B5E8,stroke:#333,color:#fff
-    style RAG fill:#FF4B4B,stroke:#333,color:#fff
-```
-
-1. **Ingest** — module 01 loads and cleans the raw CSV data locally.
-2. **Cloud** — data lands in Snowflake; module 02 adds a Cortex-powered chatbot.
-3. **Retrieve** — the corpus is chunked and indexed by Cortex Search.
-4. **Generate** — module 03 answers questions via a full RAG pipeline.
-
 ## Getting started
 
 ```bash
