@@ -1,0 +1,5 @@
+# Add these lines to your .gitignore if not already present:
+.streamlit/secrets.toml
+__pycache__/
+*.pyc
+.venv/

@@ -1,54 +1,106 @@
-# Fast Prototyping of a GenAI App with Streamlit
+<h1 align="center">Fast Prototyping of a GenAI App with Streamlit</h1>
 
-This repository contains the projects developed during the **DeepLearning.AI** course: *"Fast Prototyping of GenAI Apps with Streamlit"*. The goal of this project is to demonstrate the evolution from a basic data processing tool to a fully integrated AI-powered data assistant (using the Avalanche dataset).
+<p align="center">
+  <b>From a local data-cleaning tool to a cloud-native, RAG-powered AI data assistant.</b><br>
+  Streamlit UI · Snowflake Cortex (LLMs + Cortex Search) · Retrieval-Augmented Generation.
+</p>
 
-## 🚀 Project Overview
-
-The project is divided into two main stages of development, showcasing how to build, scale, and integrate LLMs into data applications.
-
-### 📁 [01-GenAi-Data-Ingestion-and-Cleaning](./01-GenAi-Data-Ingestion-and-Cleaning)
-This module focuses on the fundamentals of Streamlit and local data handling.
-* **Key Features:** CSV data ingestion, automated text cleaning using Regex, and interactive data visualization (Bar Charts).
-* **Tech Stack:** Streamlit, Pandas, Python (Regex).
-* **Learning Goal:** Understanding state management (`st.session_state`) and building a responsive UI layout.
-
-### 📁 [02-GenAi-Data-Assistant](./02-GenAi-Data-Assistant)
-The final stage of the application, transforming the prototype into a cloud-native AI assistant.
-* **Key Features:**
-    * **Snowflake Integration:** Direct connection to cloud data warehouses.
-    * **Cortex AI:** Leveraging the `claude-3-5-sonnet` model directly within Snowflake for high-performance inference.
-    * **Natural Language Querying:** A chatbot interface that allows users to ask questions about their data in plain English.
-* **Tech Stack:** Streamlit, Snowflake (Snowpark & Cortex), Matplotlib, Claude 3.5 Sonnet.
-* **Learning Goal:** Implementing RAG (Retrieval-Augmented Generation) patterns and deploying enterprise-grade GenAI apps.
-
-### 📁 [03-GenAi-Advanced-Rag-and-Chatbot](./03-GenAi-Advanced-Rag-and-Chatbot)
-The advanced stage focusing on enterprise-grade features and RAG architecture.
-* **Key Features:**
-    * **Cortex Search:** Implementation of a RAG pipeline with semantic search.
-    * **Advanced UI:** Multi-tab interface for data exploration and AI interaction.
-    * **Chat History:** Persistent conversation memory using `st.session_state`.
-    * **Model Selection:** Support for multiple LLMs (Claude 3.5, Mistral, Llama 3).
-* **Tech Stack:** Snowflake Cortex Search, Streamlit Tabs & Chat Elements.
-
-#### App Interace from Folder 03
-![Streamlit Snowflake Dashboard](03-GenAi-Advanced-Rag-and-Chatbot/assets/deploy-to-streamlit-in-snowflake-2.png)
----
-
-## 🛠️ Setup & Installation
-
-1.  **Clone the repository:**
-    ```bash
-    git clone [https://github.com/LTolo/Fast-Prototyping-of-a-GenAI-App-with-Streamlit.git](https://github.com/LTolo/Fast-Prototyping-of-a-GenAI-App-with-Streamlit.git)
-    ```
-
-2.  **Install Dependencies:**
-    Each folder contains its specific logic. Ensure you have the necessary libraries installed:
-    ```bash
-    pip install streamlit pandas snowflake-snowpark-python matplotlib
-    ```
-
-3.  **Snowflake Configuration:**
-    For the Data Assistant, ensure your `.streamlit/secrets.toml` is configured with your Snowflake credentials (do not commit this file to GitHub!).
+<p align="center">
+  <a href="https://github.com/LTolo/Fast-Prototyping-of-a-GenAI-App-with-Streamlit/actions/workflows/ci.yml"><img alt="CI" src="https://github.com/LTolo/Fast-Prototyping-of-a-GenAI-App-with-Streamlit/actions/workflows/ci.yml/badge.svg"></a>
+  <img alt="Python" src="https://img.shields.io/badge/python-3.11%2B-blue.svg">
+  <img alt="Streamlit" src="https://img.shields.io/badge/Streamlit-app-FF4B4B?logo=streamlit&logoColor=white">
+  <img alt="Snowflake Cortex" src="https://img.shields.io/badge/Snowflake-Cortex-29B5E8?logo=snowflake&logoColor=white">
+  <a href="LICENSE"><img alt="License: MIT" src="https://img.shields.io/badge/License-MIT-yellow.svg"></a>
+</p>
 
 ---
-*Disclaimer: This project was built as part of the DeepLearning.AI course curriculum.*
+
+This repository contains the projects built during the **DeepLearning.AI** course
+*"Fast Prototyping of GenAI Apps with Streamlit"*. It demonstrates the evolution
+from a basic local data-processing tool into a fully integrated, cloud-native
+AI-powered data assistant, using the hypothetical **Avalanche** winter-sports
+dataset (customer reviews + shipping logs).
+
+## Project overview
+
+The project progresses through **three stages**, showing how to build, scale, and
+integrate LLMs into a data application.
+
+### 📁 [01 — Data Ingestion & Cleaning](./01-GenAi-Data-Ingestion-and-Cleaning)
+
+The fundamentals of Streamlit and local data handling.
+- **Features:** CSV ingestion, automated text cleaning with Regex, interactive charts.
+- **Stack:** Streamlit · Pandas · Python (Regex).
+- **Goal:** Master `st.session_state` and build a responsive UI layout.
+
+### 📁 [02 — Cloud-native Data Assistant](./02-GenAi-Data-Assistant)
+
+Turning the prototype into a cloud-native AI assistant on Snowflake.
+- **Features:** Direct Snowflake connection, sentiment visualizations, and a
+  natural-language chatbot powered by **Claude 3.5 Sonnet** via Snowflake Cortex.
+- **Stack:** Streamlit · Snowflake (Snowpark & Cortex) · Matplotlib.
+- **Goal:** Query data in plain English; deploy an enterprise-grade GenAI app.
+
+### 📁 [03 — Advanced RAG & Chatbot](./03-GenAi-Advanced-Rag-and-Chatbot)
+
+Enterprise-grade features and a full RAG architecture.
+- **Features:** **Cortex Search** semantic-search pipeline, multi-tab UI,
+  persistent chat history (`st.session_state`), and multi-model selection
+  (Claude 3.5 · Mistral · Llama 3).
+- **Stack:** Snowflake Cortex Search · Streamlit Tabs & Chat elements.
+- **Goal:** Implement a production-style RAG pipeline over the review corpus.
+
+## How it works
+
+```mermaid
+graph LR;
+    CSV["Avalanche data<br/>(reviews + shipping)"] --> ING[01 · Ingest & clean]
+    ING --> SNOW[(Snowflake)]
+    SNOW --> ASST[02 · Cortex chatbot]
+    SNOW --> CHUNK[Chunk + embed]
+    CHUNK --> SEARCH[Cortex Search]
+    SEARCH --> RAG[03 · RAG chatbot]
+    style SEARCH fill:#29B5E8,stroke:#333,color:#fff
+    style RAG fill:#FF4B4B,stroke:#333,color:#fff
+```
+
+## Getting started
+
+```bash
+git clone https://github.com/LTolo/Fast-Prototyping-of-a-GenAI-App-with-Streamlit.git
+cd Fast-Prototyping-of-a-GenAI-App-with-Streamlit
+
+# Each module has its own requirements; install what you need, e.g.:
+pip install -r 01-GenAi-Data-Ingestion-and-Cleaning/requirements.txt
+
+# Run a module (module 01 works fully locally):
+streamlit run 01-GenAi-Data-Ingestion-and-Cleaning/streamlit_app.py
+```
+
+> **Snowflake modules (02 & 03):** configure `.streamlit/secrets.toml` with your
+> Snowflake credentials. **Do not commit this file** — it's already covered by
+> `.gitignore`.
+
+## Testing
+
+Standalone unit tests cover the core logic (text cleaning + retrieval) without
+needing any cloud credentials, and run automatically in CI:
+
+```bash
+pip install pytest
+pytest tests/ -q
+```
+
+## Tech stack
+
+**Python 3.11+** · **Streamlit** · **Snowflake** (Snowpark · Cortex · Cortex
+Search) · **Pandas** · **Matplotlib** · **pytest** · **GitHub Actions**
+
+## License
+
+Released under the [MIT License](LICENSE).
+
+---
+
+*Disclaimer: This project was built as part of the DeepLearning.AI course
+curriculum ("Fast Prototyping of GenAI Apps with Streamlit").*
